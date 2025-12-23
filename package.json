@@ -1,0 +1,36 @@
+{
+  "name": "otp-npm-test",
+  "version": "0.0.1",
+  "description": "A test SDK for generating OTPs",
+  "sideEffects": false,
+  "author": {
+    "name": "Duro",
+    "url": "https://github.com/durotolu"
+  },
+  "license": "MIT",
+  "keywords": ["otp", "generator"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "concurrently \"npm:build:watch\" \"tsx watch test-folder/script.ts\"",
+    "build": "tsup",
+    "build:watch": "tsup --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "concurrently": "^9.2.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
