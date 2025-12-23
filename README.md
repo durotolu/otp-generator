@@ -2,6 +2,7 @@
 
 A lightweight, reusable **JavaScript/TypeScript SDK** for generating numeric One-Time Passwords (OTPs).  
 Built with **TypeScript** and bundled using **tsup**, supporting both **CommonJS** and **ES Modules**.
+
 ARTICLE: https://medium.com/@jyc.dev/how-to-build-and-publish-your-own-javascript-sdk-with-typescript-step-by-step-guide-2860345719ef
 
 
